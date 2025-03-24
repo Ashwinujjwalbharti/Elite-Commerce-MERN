@@ -4,9 +4,11 @@ import Header from "./Header";
 import { Helmet } from "react-helmet";
 import GoToTop from "./GoToTop";
 
-const Layout = ({ children, title, description, keywords, author }) => {
+const Layout = ({children, title, description, keywords, author }) => {
   return (
     <div>
+      {/* helmet is a react library which help us to perform SEO(search engine optimization) */}/
+       {/* here we are preforming SEO */}
       <Helmet>
         <meta charSet="utf-8" />
         <meta name="description" content={description} />

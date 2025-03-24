@@ -25,6 +25,7 @@ const __dirname = path.dirname(__filename);
 const app = express();
 
 //middelwares
+// cors are used to prevent from any origin error while coming during both front,back end runs
 app.use(cors());
 app.use(express.json());       // request aur res me json data bhi bhej sakte hai is middleware se pehle haam log body parsar use karte the
 app.use(morgan("dev"));

@@ -39,6 +39,7 @@ const Register = () => {
           user: res.data.user,
           token: res.data.token,
         });
+      // local storage dont support json data therfore convert by jason.stringify
         localStorage.setItem("auth", JSON.stringify(res.data));
         navigate(location.state || "/");
       } else {
